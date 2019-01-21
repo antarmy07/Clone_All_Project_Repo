@@ -1,4 +1,4 @@
-# Clone_All_Project_Repo
+# Clone All Project Repo In BitBucket
 
 This script helps us to clone multiple repos in a projects at once.
 
