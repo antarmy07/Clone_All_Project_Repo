@@ -14,7 +14,7 @@ cd "$location";
 
 #Getting all projects
 
-curl --user $username "URL OF THE REPO OR PROJECT" | grep _COMMON NAME OF THE REPOS | awk -F ">" '{print$2}' | sed 's:</a::' | xargs -I {} echo "git@bitbucket.org:REPONAME/{}" > clone_project_repos.sh
+curl --user $username "URL OF THE REPO OR PROJECT" | grep _COMMON NAME OF THE REPOS IF NEEDED OPTIONAL | awk -F ">" '{print$2}' | sed 's:</a::' | xargs -I {} echo "git@bitbucket.org:REPONAME/{}" > clone_project_repos.sh
 sh clone_project_repos.sh
 
 exit 0;
